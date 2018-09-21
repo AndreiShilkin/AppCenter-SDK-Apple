@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
     MSAppCenter.setLogLevel(MSLogLevel.verbose)
 
     // Start App Center SDK.
-    let appSecret = "0dbca56b-b9ae-4d53-856a-7c2856137d85"
+    let appSecret = "fdbc41d0-5417-44bc-8baa-ef1f69176240"
     let services = [MSAnalytics.self, MSCrashes.self, MSDistribute.self, MSPush.self]
     let startTarget = StartupMode(rawValue: UserDefaults.standard.integer(forKey: kMSStartTargetKey))!
     switch startTarget {
