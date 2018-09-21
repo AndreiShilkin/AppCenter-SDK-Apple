@@ -222,7 +222,6 @@
 		D31EF96A1E9517C600450162 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EF9691E9517C600450162 /* ExtensionDelegate.swift */; };
 		D31EF96C1E9517C600450162 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31EF96B1E9517C600450162 /* NotificationController.swift */; };
 		D31EF96E1E9517C600450162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31EF96D1E9517C600450162 /* Assets.xcassets */; };
-		D31EF9721E9517C600450162 /* SasquatchWatchSwift.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D31EF9541E9517C500450162 /* SasquatchWatchSwift.app */; };
 		F809D5041FC6DA2B005E0F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F809D5021FC6DA2B005E0F83 /* LaunchScreen.storyboard */; };
 		F809D5051FC6DD80005E0F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F809D5021FC6DA2B005E0F83 /* LaunchScreen.storyboard */; };
 		F89D79091E93DA3A0094521F /* CrashLibIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89D79081E93DA3A0094521F /* CrashLibIOS.framework */; };
@@ -513,13 +512,6 @@
 			remoteGlobalIDString = D31EF95F1E9517C600450162;
 			remoteInfo = "SasquatchWatchSwift Extension";
 		};
-		D31EF9701E9517C600450162 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84226C0A1E88FEFC00798417 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D31EF9531E9517C500450162;
-			remoteInfo = SasquatchWatchSwift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -595,7 +587,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				D31EF9721E9517C600450162 /* SasquatchWatchSwift.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1297,7 +1288,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D31EF9711E9517C600450162 /* PBXTargetDependency */,
 			);
 			name = SasquatchSwift;
 			productName = SasquatchSwift;
@@ -1492,7 +1482,7 @@
 					};
 					84226C7F1E8908C900798417 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5Z97G9NZQ6;
+						DevelopmentTeam = 285W24646W;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -2325,11 +2315,6 @@
 			target = D31EF95F1E9517C600450162 /* SasquatchWatchSwift Extension */;
 			targetProxy = D31EF9621E9517C600450162 /* PBXContainerItemProxy */;
 		};
-		D31EF9711E9517C600450162 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D31EF9531E9517C500450162 /* SasquatchWatchSwift */;
-			targetProxy = D31EF9701E9517C600450162 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -2475,9 +2460,9 @@
 				CODE_SIGN_ENTITLEMENTS = SasquatchSwift/SasquatchSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 285W24646W;
 				INFOPLIST_FILE = SasquatchSwift/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcenter.sasquatchswift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.andreishilkin.appcenter.sasquatchswift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -2488,9 +2473,9 @@
 				CODE_SIGN_ENTITLEMENTS = SasquatchSwift/SasquatchSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 285W24646W;
 				INFOPLIST_FILE = SasquatchSwift/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcenter.sasquatchswift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.andreishilkin.appcenter.sasquatchswift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
