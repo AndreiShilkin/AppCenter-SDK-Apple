@@ -782,7 +782,7 @@
 			baseConfigurationReference = C2B2102321B6A9FF00F116BD /* iOS.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CrashLib/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcenter.CrashLibIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.andreishilkin.appcenter.CrashLibIOS;
 			};
 			name = Debug;
 		};
@@ -791,7 +791,7 @@
 			baseConfigurationReference = C2B2102321B6A9FF00F116BD /* iOS.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CrashLib/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcenter.CrashLibIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.andreishilkin.appcenter.CrashLibIOS;
 			};
 			name = Release;
 		};
