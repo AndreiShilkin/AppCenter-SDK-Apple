@@ -55,8 +55,8 @@ class MSCrashesViewController: UITableViewController, UIImagePickerControllerDel
     let isFirst = section == 0
     let isSecond = section == 1
     if isFirst {
-     return "Breadcrumbs"
-    }else if isSecond {
+      return "Breadcrumbs"
+    } else if isSecond {
       return "Crashes Settings"
     } else {
       return categoryForSection(section - 2)
@@ -69,7 +69,7 @@ class MSCrashesViewController: UITableViewController, UIImagePickerControllerDel
     var cellIdentifier = "crash"
     if isFirst {
       cellIdentifier = "breadcrumbs"
-    }else if isSecond {
+    } else if isSecond {
       if indexPath.row == 0 {
         cellIdentifier = "enable"
       } else {
@@ -126,7 +126,7 @@ class MSCrashesViewController: UITableViewController, UIImagePickerControllerDel
     if isFirst {
       for index in 0...29 {
         let eventName = "Breadcrumb_\(index)"
-        MSAnalytics.trackEvent(eventName)
+        appCenter.trackEvent(eventName)
       }
       appCenter.generateTestCrash()
     } else if isSecond {
@@ -161,8 +161,7 @@ class MSCrashesViewController: UITableViewController, UIImagePickerControllerDel
           }
         })
       }
-    }
-    else {
+    } else {
       
       // Crash cell.
       let crash = crashByIndexPath(indexPath)

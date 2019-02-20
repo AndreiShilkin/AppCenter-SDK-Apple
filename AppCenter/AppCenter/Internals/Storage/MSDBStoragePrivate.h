@@ -4,6 +4,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef int (^MSDBStorageQueryBlock)(void *);
 
+// 10 MiB.
+static const long kMSDefaultDatabaseSizeInBytes = 10 * 1024 * 1024;
+
 @interface MSDBStorage ()
 
 /**
@@ -12,9 +15,21 @@ typedef int (^MSDBStorageQueryBlock)(void *);
 @property(nonatomic, readonly, nullable) NSURL *dbFileURL;
 
 /**
- * Delete the database file, this can't be undone. Only used while testing.
+ * Maximum size of the database.
  */
-- (void)deleteDatabase;
+@property(nonatomic) long maxSizeInBytes;
+
+/**
+ * Page size for database.
+ */
+@property(nonatomic, readonly) long pageSize;
+
+/**
+ * Called after the database is created. Override to customize the database.
+ *
+ * @param db Database handle.
+ */
+- (void)customizeDatabase:(void *)db;
 
 /**
  * Called when migration is needed. Override to customize.
@@ -29,7 +44,32 @@ typedef int (^MSDBStorageQueryBlock)(void *);
  *
  * @param block Actions to perform in query.
  */
-- (BOOL)executeQueryUsingBlock:(MSDBStorageQueryBlock)block;
+- (int)executeQueryUsingBlock:(MSDBStorageQueryBlock)block;
+
+/**
+ * Query the number of pages (i.e.: SQLite "page_count") of the database.
+ *
+ * @param db Database handle.
+ *
+ * @return The number of pages.
+ */
++ (long)getPageCountInOpenedDatabase:(void *)db;
+
+/**
+ * Query the size of pages (i.e.: SQLite "page_size") of the database.
+ *
+ * @param db Database handle.
+ *
+ * @return The size of pages.
+ */
++ (long)getPageSizeInOpenedDatabase:(void *)db;
+
+/**
+ * Set the auto vacuum (i.e.: SQLite "auto_vacuum") of the database.
+ *
+ * @param db Database handle.
+ */
++ (void)enableAutoVacuumInOpenedDatabase:(void *)db;
 
 /**
  * Check if a table exists in this database.
@@ -57,7 +97,7 @@ typedef int (^MSDBStorageQueryBlock)(void *);
 
 /**
  * Execute a non selection SQLite query on the database (i.e.: "CREATE",
- * "INSERTE", "UPDATE"... but not "SELECT").
+ * "INSERT", "UPDATE"... but not "SELECT").
  *
  * @param query An SQLite query to execute.
  * @param db Database handle.
@@ -72,10 +112,18 @@ typedef int (^MSDBStorageQueryBlock)(void *);
  * @param query An SQLite "SELECT" query to execute.
  * @param db Database handle.
  *
- * @return The selectioned entries.
+ * @return The selected entries.
  */
-+ (NSArray<NSArray *> *)executeSelectionQuery:(NSString *)query
-                             inOpenedDatabase:(void *)db;
++ (NSArray<NSArray *> *)executeSelectionQuery:(NSString *)query inOpenedDatabase:(void *)db;
+
+/**
+ * Query the maximum number of pages (i.e.: SQLite "max_page_count") of the database.
+ *
+ * @param db Database handle.
+ *
+ * @return The maximum number of pages.
+ */
++ (long)getMaxPageCountInOpenedDatabase:(void *)db;
 
 @end
 

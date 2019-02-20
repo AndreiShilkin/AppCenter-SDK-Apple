@@ -17,8 +17,7 @@ static short const kMSHTTPMinGZipLength = 1400;
 /**
  * Enum with the different HTTP status codes.
  */
-typedef NS_ENUM(NSInteger, MSHTTPCodesNo) {
-  // Informational
+typedef NS_ENUM(NSInteger, MSHTTPCodesNo) { // Informational
   MSHTTPCodesNo1XXInformationalUnknown = 1,
   MSHTTPCodesNo100Continue = 100,
   MSHTTPCodesNo101SwitchingProtocols = 101,
@@ -143,3 +142,23 @@ static const int kMSMaxPropertyKeyLength = 125;
  * Maximum properties value length.
  */
 static const int kMSMaxPropertyValueLength = 125;
+
+/**
+ * Maximum allowable size of a common schema log in bytes.
+ */
+static const long kMSMaximumCommonSchemaLogSizeInBytes = 2 * 1024 * 1024;
+
+/**
+ * Suffix for One Collector group ID.
+ */
+static NSString *const kMSOneCollectorGroupIdSuffix = @"/one";
+
+/**
+ * Bit mask for persistence flags.
+ */
+static const NSUInteger kMSPersistenceFlagsMask = 0xFF;
+
+/**
+ * Common schema prefix separator used in various field values.
+ */
+static NSString *const kMSCommonSchemaPrefixSeparator = @":";
