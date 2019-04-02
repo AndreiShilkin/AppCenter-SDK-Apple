@@ -130,7 +130,7 @@
 		0446DF9F1F3B981000C8E338 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0484DD1A1F39091D0092B777 /* OCHamcrest.framework */; };
 		0446DFA01F3B981500C8E338 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0484DD1C1F39092A0092B777 /* OCMock.framework */; };
 		0446DFA51F3B986B00C8E338 /* libAppCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0446DFA41F3B986B00C8E338 /* libAppCenter.a */; };
-		0446DFA81F3B988B00C8E338 /* libAppCenterCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EBBEE81F01C0C90006B8AE /* libAppCenterCrashes.a */; };
+		0446DFA81F3B988B00C8E338 /* lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EBBEE81F01C0C90006B8AE /* lib.a */; };
 		0446DFAA1F3B98A300C8E338 /* libAppCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0446DFA91F3B98A300C8E338 /* libAppCenter.a */; };
 		0446DFAC1F3B98A800C8E338 /* libAppCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0446DFAB1F3B98A800C8E338 /* libAppCenter.a */; };
 		0485AFA11EAA887500C10CAF /* MSErrorReport.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F120DF1D657CF10060DED7 /* MSErrorReport.m */; };
@@ -206,7 +206,7 @@
 		0493278F1ECA170D00D0187A /* live_report_signal_marketing.plcrash in Resources */ = {isa = PBXBuildFile; fileRef = 6EC99A341D416CCF0016C325 /* live_report_signal_marketing.plcrash */; };
 		049327901ECA170D00D0187A /* live_report_empty.plcrash in Resources */ = {isa = PBXBuildFile; fileRef = 6EC99A301D416CCF0016C325 /* live_report_empty.plcrash */; };
 		049327911ECA170D00D0187A /* live_report_exception.plcrash in Resources */ = {isa = PBXBuildFile; fileRef = 6EC99A311D416CCF0016C325 /* live_report_exception.plcrash */; };
-		049327CE1ECA1A5F00D0187A /* libAppCenterCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0485AFD31EAA887500C10CAF /* libAppCenterCrashes.a */; };
+		049327CE1ECA1A5F00D0187A /* lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0485AFD31EAA887500C10CAF /* lib.a */; };
 		049553061EF19FB50097E071 /* MSCrashesUtilPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 049553051EF19F9F0097E071 /* MSCrashesUtilPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		049553071EF19FB60097E071 /* MSCrashesUtilPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 049553051EF19F9F0097E071 /* MSCrashesUtilPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		0499F8721EDFAE0B00C3EDDA /* MSErrorAttachmentLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024743A1EAE077800AEC284 /* MSErrorAttachmentLog.m */; };
@@ -309,7 +309,7 @@
 		6E0401761D1C9E750051BCFA /* MSCrashes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E04014F1D1C9A4F0051BCFA /* MSCrashes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E0401771D1C9EBE0051BCFA /* AppCenter+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0401591D1C9D7F0051BCFA /* AppCenter+Internal.h */; };
 		6E0401781D1C9EBE0051BCFA /* MSCrashesPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0401521D1C9A4F0051BCFA /* MSCrashesPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6E171AE61D22F781000DC480 /* libAppCenterCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0401331D1C98690051BCFA /* libAppCenterCrashes.a */; };
+		6E171AE61D22F781000DC480 /* lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0401331D1C98690051BCFA /* lib.a */; };
 		6E171AEE1D22F7BE000DC480 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E171AED1D22F7BE000DC480 /* OCHamcrestIOS.framework */; };
 		6E73FE6A1D402F79008CDC15 /* MSCrashesCXXExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E73FE681D402F79008CDC15 /* MSCrashesCXXExceptionHandler.h */; };
 		6E73FE6B1D402F79008CDC15 /* MSCrashesCXXExceptionHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E73FE691D402F79008CDC15 /* MSCrashesCXXExceptionHandler.mm */; };
@@ -492,7 +492,7 @@
 		04311FFB1EE08885007054C5 /* MSCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashReporter.h; sourceTree = "<group>"; };
 		043281611F74A665002F7205 /* MSMockUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMockUserDefaults.h; path = ../../AppCenter/AppCenterTests/Util/MSMockUserDefaults.h; sourceTree = "<group>"; };
 		043281621F74A665002F7205 /* MSMockUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMockUserDefaults.m; path = ../../AppCenter/AppCenterTests/Util/MSMockUserDefaults.m; sourceTree = "<group>"; };
-		0446DF9D1F3B977100C8E338 /* AppCenterCrashes.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCenterCrashes.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0446DF9D1F3B977100C8E338 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0446DFA41F3B986B00C8E338 /* libAppCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCenter.a; path = "../../../../../Library/Developer/Xcode/DerivedData/MobileCenter-atgozldoovnqvrcmynluxwlivwkq/Build/Products/Debug-appletvsimulator/libAppCenter.a"; sourceTree = "<group>"; };
 		0446DFA91F3B98A300C8E338 /* libAppCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCenter.a; path = "../../../../../Library/Developer/Xcode/DerivedData/MobileCenter-atgozldoovnqvrcmynluxwlivwkq/Build/Products/Debug-iphonesimulator/libAppCenter.a"; sourceTree = "<group>"; };
 		0446DFAB1F3B98A800C8E338 /* libAppCenter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCenter.a; path = "../../../../../Library/Developer/Xcode/DerivedData/MobileCenter-atgozldoovnqvrcmynluxwlivwkq/Build/Products/Debug/libAppCenter.a"; sourceTree = "<group>"; };
@@ -500,8 +500,8 @@
 		0484DD1A1F39091D0092B777 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = ../../Vendor/tvOS/OCHamcrest/OCHamcrest.framework; sourceTree = "<group>"; };
 		0484DD1C1F39092A0092B777 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../../tvOS/OCMock/OCMock.framework; sourceTree = "<group>"; };
 		0484DD5F1F3910EF0092B777 /* Tests tvOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Tests tvOS.xcconfig"; path = "../../Config/Tests tvOS.xcconfig"; sourceTree = "<group>"; };
-		0485AFD31EAA887500C10CAF /* libAppCenterCrashes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppCenterCrashes.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		049327961ECA170D00D0187A /* AppCenterCrashes.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCenterCrashes.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0485AFD31EAA887500C10CAF /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		049327961ECA170D00D0187A /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049327B11ECA19FD00D0187A /* libCrashReporter-MacOSX-Static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCrashReporter-MacOSX-Static.a"; sourceTree = "<group>"; };
 		049327CF1ECA1BA100D0187A /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
 		049327D01ECA1BA100D0187A /* PLCrashFeatureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFeatureConfig.h; sourceTree = "<group>"; };
@@ -531,7 +531,7 @@
 		04A082011F74BB6100DC776D /* MSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSService.h; path = ../AppCenter/AppCenter/MSService.h; sourceTree = "<group>"; };
 		04BED7211ECB65DD00E20975 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = ../../Vendor/macOS/OCHamcrest/OCHamcrest.framework; sourceTree = "<group>"; };
 		04EBBEAE1F01C0B50006B8AE /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = ../Vendor/tvOS/PLCrashReporter/CrashReporter.framework; sourceTree = "<group>"; };
-		04EBBEE81F01C0C90006B8AE /* libAppCenterCrashes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppCenterCrashes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EBBEE81F01C0C90006B8AE /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EBBEEE1F01C1420006B8AE /* tvOS.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = tvOS.modulemap; sourceTree = "<group>"; };
 		04EBBEEF1F01C1420006B8AE /* tvOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
 		04ED31F21EAAD6070033BAAE /* iOS.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iOS.modulemap; sourceTree = "<group>"; };
@@ -559,13 +559,13 @@
 		387C77061D6CC41100D68CC1 /* MSServiceAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSServiceAbstract.h; path = ../AppCenter/AppCenter/MSServiceAbstract.h; sourceTree = "<group>"; };
 		38BD86511E8499EF004E8D7A /* MSErrorAttachmentLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSErrorAttachmentLog.h; sourceTree = "<group>"; };
 		59493B275715F01438B2E6FD /* MSCrashesUtilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashesUtilTests.m; sourceTree = "<group>"; };
-		6E0401331D1C98690051BCFA /* libAppCenterCrashes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppCenterCrashes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0401331D1C98690051BCFA /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0401361D1C98690051BCFA /* AppCenterCrashes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCenterCrashes.h; sourceTree = "<group>"; };
 		6E04014F1D1C9A4F0051BCFA /* MSCrashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashes.h; sourceTree = "<group>"; };
 		6E0401501D1C9A4F0051BCFA /* MSCrashes.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = MSCrashes.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6E0401521D1C9A4F0051BCFA /* MSCrashesPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashesPrivate.h; sourceTree = "<group>"; };
 		6E0401591D1C9D7F0051BCFA /* AppCenter+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppCenter+Internal.h"; path = "../../../AppCenter/AppCenter/Internals/AppCenter+Internal.h"; sourceTree = "<group>"; };
-		6E171AE11D22F781000DC480 /* AppCenterCrashes.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCenterCrashes.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E171AE11D22F781000DC480 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E171AE51D22F781000DC480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E171AED1D22F7BE000DC480 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = ../../Vendor/iOS/OCHamcrest/OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		6E37297F1D1DE93800F1E4AE /* AppCenterCrashes Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "AppCenterCrashes Debug.xcconfig"; sourceTree = "<group>"; };
@@ -666,7 +666,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0446DFA81F3B988B00C8E338 /* libAppCenterCrashes.a in Frameworks */,
+				0446DFA81F3B988B00C8E338 /* lib.a in Frameworks */,
 				0446DFA51F3B986B00C8E338 /* libAppCenter.a in Frameworks */,
 				0446DFA01F3B981500C8E338 /* OCMock.framework in Frameworks */,
 				0446DF9F1F3B981000C8E338 /* OCHamcrest.framework in Frameworks */,
@@ -685,7 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0446DFAC1F3B98A800C8E338 /* libAppCenter.a in Frameworks */,
-				049327CE1ECA1A5F00D0187A /* libAppCenterCrashes.a in Frameworks */,
+				049327CE1ECA1A5F00D0187A /* lib.a in Frameworks */,
 				04BED7231ECB65E100E20975 /* OCHamcrest.framework in Frameworks */,
 				0420A6961ECA7BF500915619 /* OCMock.framework in Frameworks */,
 				C2A4A26F1EE76B970080FD22 /* libCrashReporter-MacOSX-Static.a in Frameworks */,
@@ -713,7 +713,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0446DFAA1F3B98A300C8E338 /* libAppCenter.a in Frameworks */,
-				6E171AE61D22F781000DC480 /* libAppCenterCrashes.a in Frameworks */,
+				6E171AE61D22F781000DC480 /* lib.a in Frameworks */,
 				6E171AEE1D22F7BE000DC480 /* OCHamcrestIOS.framework in Frameworks */,
 				0420A6981ECA7C1700915619 /* OCMock.framework in Frameworks */,
 			);
@@ -925,12 +925,12 @@
 		6E0401341D1C98690051BCFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E0401331D1C98690051BCFA /* libAppCenterCrashes.a */,
-				6E171AE11D22F781000DC480 /* AppCenterCrashes.xctest */,
-				0485AFD31EAA887500C10CAF /* libAppCenterCrashes.a */,
-				049327961ECA170D00D0187A /* AppCenterCrashes.xctest */,
-				04EBBEE81F01C0C90006B8AE /* libAppCenterCrashes.a */,
-				0446DF9D1F3B977100C8E338 /* AppCenterCrashes.xctest */,
+				6E0401331D1C98690051BCFA /* lib.a */,
+				6E171AE11D22F781000DC480 /* .xctest */,
+				0485AFD31EAA887500C10CAF /* lib.a */,
+				049327961ECA170D00D0187A /* .xctest */,
+				04EBBEE81F01C0C90006B8AE /* lib.a */,
+				0446DF9D1F3B977100C8E338 /* .xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1300,7 +1300,7 @@
 			);
 			name = AppCenterCrashesTVOSTests;
 			productName = AppCenterCrashesTests;
-			productReference = 0446DF9D1F3B977100C8E338 /* AppCenterCrashes.xctest */;
+			productReference = 0446DF9D1F3B977100C8E338 /* .xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0485AF9F1EAA887500C10CAF /* AppCenterCrashesMacOS */ = {
@@ -1319,7 +1319,7 @@
 			);
 			name = AppCenterCrashesMacOS;
 			productName = AppCenterCrashes;
-			productReference = 0485AFD31EAA887500C10CAF /* libAppCenterCrashes.a */;
+			productReference = 0485AFD31EAA887500C10CAF /* lib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		049327611ECA170D00D0187A /* AppCenterCrashesMacOSTests */ = {
@@ -1337,7 +1337,7 @@
 			);
 			name = AppCenterCrashesMacOSTests;
 			productName = AppCenterCrashesTests;
-			productReference = 049327961ECA170D00D0187A /* AppCenterCrashes.xctest */;
+			productReference = 049327961ECA170D00D0187A /* .xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		04EBBEB01F01C0C90006B8AE /* AppCenterCrashesTVOS */ = {
@@ -1356,7 +1356,7 @@
 			);
 			name = AppCenterCrashesTVOS;
 			productName = AppCenterCrashes;
-			productReference = 04EBBEE81F01C0C90006B8AE /* libAppCenterCrashes.a */;
+			productReference = 04EBBEE81F01C0C90006B8AE /* lib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6E0401321D1C98690051BCFA /* AppCenterCrashesIOS */ = {
@@ -1375,7 +1375,7 @@
 			);
 			name = AppCenterCrashesIOS;
 			productName = AppCenterCrashes;
-			productReference = 6E0401331D1C98690051BCFA /* libAppCenterCrashes.a */;
+			productReference = 6E0401331D1C98690051BCFA /* lib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6E171AE01D22F781000DC480 /* AppCenterCrashesIOSTests */ = {
@@ -1393,7 +1393,7 @@
 			);
 			name = AppCenterCrashesIOSTests;
 			productName = AppCenterCrashesTests;
-			productReference = 6E171AE11D22F781000DC480 /* AppCenterCrashes.xctest */;
+			productReference = 6E171AE11D22F781000DC480 /* .xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
