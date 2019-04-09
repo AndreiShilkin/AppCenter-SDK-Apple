@@ -25,12 +25,12 @@ static long long const kMSDayInMillisecond = 24 /* Hours */ * 60 /* Minutes */ *
 /**
  * Base URL for HTTP Distribute install API calls.
  */
-static NSString *const kMSDefaultInstallUrl = @"https://install.portal-server-core-integration.dev.avalanch.es";
+static NSString *const kMSDefaultInstallUrl = @"https://install.appcenter.ms";
 
 /**
  * Base URL for HTTP Distribute update API calls.
  */
-static NSString *const kMSDefaultApiUrl = @"https://portal-server-core-integration.dev.avalanch.es/api/v0.1";
+static NSString *const kMSDefaultApiUrl = @"https://api.appcenter.ms/v0.1";
 
 /**
  * Distribute url query parameter key strings.

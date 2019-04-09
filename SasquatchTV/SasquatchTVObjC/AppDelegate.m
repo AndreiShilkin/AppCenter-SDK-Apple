@@ -15,7 +15,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   [MSAppCenter setLogLevel:MSLogLevelVerbose];
-  [MSAppCenter setLogUrl:@"https://in-integration.dev.avalanch.es"];
+  [MSAppCenter setLogUrl:@"https://in.appcenter.ms"];
   [MSAppCenter start:@"68065a02-edbb-4fc3-a323-3b8ca2beae80" withServices:@[ [MSAnalytics class], [MSCrashes class] ]];
   [self crashes];
   [self setAppCenterCenterDelegate];
